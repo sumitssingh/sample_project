@@ -1,0 +1,140 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #a4a4a424;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 500px;
+}
+.container {
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  background-color: #17a2d4;
+  padding: 30px;
+  line-height: 40px;
+}
+.title h2 {
+  font-family: Lato;
+  color: #f4f4f4;
+  word-spacing: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0px;
+}
+
+.submitForm {
+  background-color: #fff;
+  padding: 25px;
+
+}
+.form-row {
+  margin-bottom: 20px;
+}
+.form-row input {
+
+  width: 100%;
+  padding: 18.5px 20px;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  border-width: 1px;
+  border-color: #e8e8e8;
+  border-style: solid;
+  background-color: #f6f6f6;
+  border: 1px solid #e8e8e8;
+}
+.form-row input[type=email],
+input[type=password] {
+  box-sizing : border-box;
+}
+.form-row button {
+  width: 100%;
+  padding: 18.5px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+span.arrow {
+  float: right;
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+  font-size: 30px;
+}
+button.btn.btn-primary-lrg {
+  width: 100%;
+  padding: 14px 20px !important;
+  vertical-align: middle;
+  line-height: 29px;
+  color: #fff;
+  text-align: left;
+  background-color: #17a2d4;
+  border-radius: 3px;
+  border: 1px solid #17a2d4;
+}
+
+.social {
+  /*padding: 15px 0;*/
+}
+.social button {
+  /*padding: 10px 0px;*/
+  width: 46.7%;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+}
+.social button.btn.btn-primary-fb {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  float: left;
+  margin-right: 29px;
+}
+.social button.btn.btn-primary-google {
+  float: left;
+  background-color: #d34836;
+  border: 1px solid #d34836;
+}
+.footer a {
+  margin: 0px;
+  text-decoration: none;
+  color: #000;
+}
+a.forgot {
+  float: left;
+}
+a.signup {
+  float: right;
+}
+.clear {
+  clear: both;
+}
