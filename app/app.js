@@ -4,16 +4,23 @@
 angular.module('myApp', [
     'ui.router',
     'sample_project'
-]).
-config(function($locationProvider, $urlRouterProvider, $stateProvider) {
+])
+    .constant("SERVER_BASE_URL","https://api.github.com/users/sumitssingh")
+    .config(function($locationProvider, $urlRouterProvider, $stateProvider) {
   $locationProvider.hashPrefix('!');
 
-    // $stateProvider.
-    // state('', {
-    //     url: '/',
-    //     template: '<div>login</div>',
-    //     controller: 'LoginController'
-    // })
+    $stateProvider
+        .state('main', {
+            url: '/main',
+            templateUrl: './main/main-component.html',
+            controller: 'MainController',
+            access:{
+                requiresLogin : true
+            }
+    })
 
-    $urlRouterProvider.otherwise('/login');
-});
+    $urlRouterProvider.otherwise('/signin');
+
+})
+
+

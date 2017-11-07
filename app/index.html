@@ -6,11 +6,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Sample Project</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -22,8 +23,6 @@
 
   <div ui-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
-
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -31,11 +30,16 @@
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="bower_components/ng-resource/dist/ng-resource.js"></script>
   <script src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
   <script src="app.js"></script>
   <script src="./auth/auth.config.js"></script>
-  <script src="./auth/auth.config.js"></script>
+  <script src="./auth/auth-service.js"></script>
 
   <script src="./auth/login-component/login-component.controller.js"></script>
+  <script src="./auth/register-component/register-component.controller.js"></script>
   <script src="./auth/login-component/login-component.service.js"></script>
+  <script src="./auth/register-component/register-component.service.js"></script>
+  <script src="./main/main-component.js"></script>
 </body>
 </html>

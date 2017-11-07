@@ -1,5 +1,5 @@
 (function () {
-angular.module('sample_project.auth',['angular-jwt']).service('AuthService',AuthService)
+angular.module('sample_project.auth',['angular-jwt']).factory('AuthService',AuthService)
 
     AuthService.$inject =['$q', 'angular-jwt']
         function AuthService($q, jwtHelper) {
